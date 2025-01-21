@@ -20,8 +20,6 @@ console.log(null >= 0)      //It gives a true value. The reason is that an equal
 
 // Strict check ===   -> Also checks data type here
 console.log("2" === 2);
-console.log("02" > 2);
-console.log
 
 
 
