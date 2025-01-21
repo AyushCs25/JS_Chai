@@ -16,3 +16,24 @@ const myFunction= function(){
 console.log(typeof heros);
 console.log(typeof myObj)           // All non-primitive data types (Array,Objects) returns 'object' as their "typeof"
 console.log(typeof myFunction);       // Except the 'Function' which returns 'function'(object function) as its "typeof"
+
+
+/*  ************************************************************************ */
+// Stack(Primitive) and Heap(Non-Primitive) Meomry in JS
+
+let myYoutubename = "ayushChoudhary"
+anotherName = "Sahil"
+
+console.log(myYoutubename)
+console.log(anotherName)
+
+let userOne = {
+    email : "userOne@gmail.com",
+    upi : "97575@ybl"
+}
+let userTwo=userOne
+userTwo.email="ayushcs22109@gmail.com"          // Changing the value in userTwo email also changes the value in userOne email, as both are
+                                                // representing same reference. (Stored in Heap Memory)
+
+console.log(userOne.email)
+console.log(userTwo.email)
