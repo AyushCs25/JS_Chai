@@ -15,7 +15,15 @@ const gameName=new String('mingle-game')         // Creates a String object that
 
 // console.log(gameName.charAt(2));
 
-console.log(gameName.lastIndexOf('m'));
+// const anotherString = gameName.slice(-9,4);
+// console.log(anotherString);
 
+// const newString = "        AYush           ";
+// const newStr = newString.trim()
+// console.log(newStr);
 
+const url= "https://google.com/ayush%20choudhary"
+console.log(url.replace('%20','-'));
+console.log(url.includes("ayush"));
 
+console.log(gameName.split('-'));
