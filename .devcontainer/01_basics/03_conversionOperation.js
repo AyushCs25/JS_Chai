@@ -17,8 +17,8 @@ console.log(typeof (valueOfMarks))
 // let booleanIsLoggedIn = Boolean(isLoggedIn)
 // console.log(booleanIsLoggedIn)
 
-// // 1 => true; 0 => false
-// // "Ayush" => true
+// 1 => true; 0 => false
+// "Ayush" => true
 // "" => 0
 
 // let someNo=33

@@ -7,7 +7,7 @@ console.log("2">1)
 console.log("02">1)
 
 // Here JS allows this comparison as it automatically coonverts the string data type to the other type by which it is comparing
-// Typescript is a language in which this type of comparison is not allowed. This is more a strict type language.
+// Typescript is a language in which this type of comparison is not allowed. TypeScript is more a strict type language.
 
 console.log(null > 0)
 console.log(null == 0)

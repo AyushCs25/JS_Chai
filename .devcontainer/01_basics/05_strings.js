@@ -3,7 +3,7 @@ const lcQues=88
 
 // console.log(name+" "+lcQues)
 console.log(`Hello, my name is ${name} and total questions I have done on my Leetcode account is ${lcQues}. `)
-//  A proffesional way to display concatenated output with all variables attached to it.
+//  A professional way to display concatenated output with all variables attached to it.
 
 const gameName=new String('mingle-game')         // Creates a String object that has all letters as key-value pairs.
 
