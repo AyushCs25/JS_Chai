@@ -47,10 +47,8 @@ handleObject({
     username: "Sam",            // Objects are directly passed in the function.
     price: 399
 })
-
 const myNewArray = [200,400,100,600]
 function returnSecondValue(getArray){
     return getArray[1];
 }
-
 console.log(returnSecondValue(myNewArray));

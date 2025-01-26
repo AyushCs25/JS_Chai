@@ -3,7 +3,7 @@
 let myDate=new Date()
 // console.log(myDate);
 // console.log(myDate.toString());
-// console.log(myDate.toDateString());
+// console.log(myDate.toDateString());          // Mostly Used
 // console.log(myDate.toLocaleString());
 // console.log(myDate.toJSON());
 // console.log(typeof myDate);                     // Date is of Object type.
@@ -14,7 +14,7 @@ console.log(myCreatedDate.toDateString());
 // let newDate=new Date(2025,4,25,3,0)
 // console.log(newDate.toLocaleString());
 
-// let myTimeStamp = Date.now();
+// let myTimeStamp = Date.now();            // Time Stamp used in calculating first occurrence of any data
 // console.log(myTimeStamp);
 
 let newDate=new Date();
