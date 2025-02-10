@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>DOM Learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div>
+        <h1 id="title" class="heading">DOM learning on Chai aur Code<span style="display: none;"> test text. </span></h1>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, voluptas. Non asperiores,</p>
+        <input type="password" name="" id="">
+
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+<!-- DOM Start
+
+1. document.getElementById('title') -> 'title' is an ID here..
+    output=== <h1 id="title" class="heading">DOM learning on Chai aur Code</h1>
+
+2. document.getElementById('title').id
+    o/p => return id name.
+
+3. document.getElementById('title').class  -> Wrong
+4. document.getElementById('title').className
+    o/p => return class name.
+
+5. document.getElementById('title').getAttribute('class')
+    o/p => return class attribute..
+
+6. document.getElementById('title').setAttribute('class','test')
+    o/p => Set the class attribute with name of 'test'.
+
+7. document.getElementById('title').setAttribute('class','test heading')
+    o/p => Set the class attribute with name of 'test' and 'heading'.
+
+8. const title= document.getElementById('title') -------- > Important
+
+9. title.style.backgroundColor = 'green'
+10. title.style.padding = "15px"
+11. title.style.padding = "50px"
+
+***************  Content display *******************
+
+12. title.textContent       -> displays all the text content inside 'title' id.
+13. title.innerHTML         -> all the HTML tags and words inside 'title' id, also with tag name and attributes.
+14. title.innerText         -> displays only that text that will be displayed on the web page.
+
+*************** Query Selector *********************
+
+15. document.querySelector('h1')    -> returns first 'h1' tag element HTML. 
+**Note** -> 'querySelector' returns the first tag of input.
+16. document.querySelector('#title')    -> returns HTML tag with id name 'title'.
+17. document.querySelector('.heading')  -> returns HTML tag with class name 'heading'.
+18. document.querySelector('input[type='password']')    -> return HTML tag of input type password.
+
+*************** DOM Manipulation ********************
+
+19. const myul=document.querySelector('ul')         -> whole 'ul' tag is selected and stored in 'myul'
+20. const turnGreen=myul.querySelector('li')        -> first 'li' tag under myul is selected and stored in 'turnGreen'
+21. turnGreen.style.backgroundColor='green'         -> changes bg color to green..
+22. turnGreen.innerText = 'five'                    -> overwrites the inner text value to 'five' from 'one'
+
+23. const tempLiList = document.querySelectorAll('li')      -> It will hold all 'li' tags in a list called NodeList, which is not an array.
+   tempLiList    o/p -> NodeList(3) [li, li, li]
+
+24. tempLiList.style.color = 'green'        -> Error
+25. tempLiList[0].style.color = 'green'     -> Correct
+
+26. tempLiList.forEach( (l) => {                    // callback function inside forEach loop of 'tempLiList'.
+        l.style.backgroundColor = "green"
+    } )
+
+27. // HTML Collection - No looping can be done
+    document.getElementsByClassName('list-item') -> HTMLCollection(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+
+28. const tempClassList = document.getElementsByClassName('list-item')
+29. const myConvertedArray = Array.from(tempClassList)      -----  >  Converted HTML Collection to an Array.(Important)
+30. myConvertedArray.forEach( (function (li) {
+        li.style.color = "orange"                           => Using for-each loop in array for modifications inside document.
+    }) )
+
+***Note  ===> We can manipulate any live website by DOM manipulation, by selecting it with querySelector and the looping it with forEach loop with style properties. 
